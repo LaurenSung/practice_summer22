@@ -25,12 +25,35 @@
     <br><br>
 
     <main>
-        <h3>Login</h3>
-        <article>
-            <div>ID<input type="text"></div>
-            <div>Password<input type="text"></div>
-            <div><button>Login</button></div>
-        </article>
+        <section>
+            <h3>Login</h3>
+
+            <label for="">Login from</label>
+            <select name="location" id="">
+                <option value="work">Work</option>
+                <option value="home" selected>Home</option>
+                <option value="cafe">Cafe</option>
+                <option value="library">Library</option>
+            </select>
+            <br><br>
+
+            <form action="" method="POST">
+                <label for="">ID</label>
+                <input name='id' type="text" id="id" required>
+                <br><br>
+                <label for="">Password</label>
+                <input name='password' type="password" id="password" required>
+                <br><br>
+                <label for="">Remember me!</label>
+                <input name='rememberMe' type="checkbox" id="rememberMe">
+                <br>
+                <input name='submitLogin' type="submit" id="submiLogin" value="Submit">
+            </form>
+        </section>
+      
+
+            <br>
+            <!-- <button>Login</button> -->
 
     </main>
     <br><br>
